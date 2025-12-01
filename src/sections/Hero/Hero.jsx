@@ -2,20 +2,20 @@ import styles from './HeroStyles.module.css';
 import heroImg from '../../assets/hero-profile.png';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
-import twitterLight from '../../assets/twitter-light.svg';
-import twitterDark from '../../assets/twitter-dark.svg';
+import instaLight from '../../assets/insta-light.svg'
+import instaDark from '../../assets/insta-dark.svg'
 import githubLight from '../../assets/github-light.svg';
 import githubDark from '../../assets/github-dark.svg';
 import linkedinLight from '../../assets/linkedin-light.svg';
 import linkedinDark from '../../assets/linkedin-dark.svg';
-import CV from '../../assets/cv.pdf'
+import CV from '../../assets/cv-2025.pdf'
 import { useTheme } from '../../common/ThemeContext';
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();
 
   const themeIcon = theme === 'light' ? sun : moon; 
-  const twitterIcon = theme === 'light' ? twitterLight : twitterDark; 
+  const instaIcon = theme === 'light' ? instaLight : instaDark;
   const githubIcon = theme === 'light' ? githubLight : githubDark; 
   const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark; 
 
@@ -35,13 +35,13 @@ function Hero() {
         <h1>Christian <br /> James</h1>
         <h2>Frontend Developer / Video Editor</h2>
         <span>
-            <a href="https://twitter.com/" target="_blank">
-            <img src={twitterIcon} alt="Twitter Icon" />
+            <a href="https://www.instagram.com/cjwayyyys/" target="_blank">
+            <img src={instaIcon} alt="Instagram Icon" />
             </a>
-            <a href="https://github.com/" target="_blank">
+            <a href="https://github.com/CJways" target="_blank">
             <img src={githubIcon} alt="Github Icon" />
             </a>
-            <a href="https://linkedin.com/" target="_blank">
+            <a href="https://www.linkedin.com/in/christian-james-narag-2b1b62103/" target="_blank">
             <img src={linkedinIcon} alt="Linkedin Icon" />
             </a>
         </span>
@@ -49,7 +49,7 @@ function Hero() {
           Driven by a passion for building modern React web applications for commercial businesses, 
           and skilled in creating polished, high-quality video edits.</p>  
             <a href={CV} download>
-            <button className="hover">Resume</button>
+            <button className="hover">Download Resume</button>
         </a>
      </div>
   </section>
