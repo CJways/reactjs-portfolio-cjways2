@@ -1,9 +1,9 @@
 import styles from './ProjectStyles.module.css';
-import tictactoe from '../../assets/Tic-Tac-Toe-Game.png'
-import freshBurger from '../../assets/fresh-burger.png'
-import fitLift from '../../assets/fitlift.png'
 import ProjectCard from '../../common/ProjectCard';
+import tictactoe from '../../assets/tictactoe.png'
+import scicalculator from '../../assets/scicalculator.png'
 import hipsster from '../../assets/hipsster.png'
+import multimediaprojects from '../../assets/multimediaprojects.png'
 
 function Projects() {
   return (
@@ -14,17 +14,17 @@ function Projects() {
         h3="Tic Tac Toe"
         p="ReactJS Game"
         />
-        < ProjectCard src={freshBurger} link='https://github.com/CJways'
-        h3="Fresh Burger"
-        p="Hamburger Restaurant"
+        < ProjectCard src={scicalculator} link='https://scientific-calculator-app-by-cjways.netlify.app/'
+        h3="Scientific Calculator"
+        p="Made with HTML, CSS, JavaScript"
         />
         < ProjectCard src={hipsster} link='https://github.com/CJways'
         h3="Hipsster"
         p="Glasses Shop"
         />
-        < ProjectCard src={fitLift} link='https://github.com/CJways'
-        h3="Fitlift"
-        p="Fitness App"
+        < ProjectCard src={multimediaprojects} link='https://drive.google.com/drive/folders/1tEYVep1T3lcOiNpJjNAjX6k37QNSCMy8?usp=sharing'
+        h3="Multimedia Projects"
+        p="Graphics and Digital Creativity."
         />
     </div>
     </section>
