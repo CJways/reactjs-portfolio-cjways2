@@ -8,7 +8,7 @@
         align-self: center;
         background-color: var(--project-card-bg);
         border-radius: 20px;
-    }
+    } 
 
     a{
         width: fit-content;
@@ -27,7 +27,12 @@
         align-items: center;
         gap: 30px;
     }
-
+.container video{
+        max-width: 250px;
+        align-self: center;
+        background-color: var(--project-card-bg);
+        border-radius: 20px;
+}
 @media(width >= 800px){
     .projectsContainer{
         flex-direction: row;

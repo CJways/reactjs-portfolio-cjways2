@@ -33,7 +33,7 @@ function Hero() {
      </div>
      <div className={styles.info}>
         <h1>Christian <br /> James</h1>
-        <h2>Frontend Developer / Video Editor</h2>
+        <h2>Video Editor & Canva Creator | <br/>Short-Form Videos & Branded Visuals</h2>
         <span>
             <a href="https://www.instagram.com/cjwayyyys/" target="_blank">
             <img src={instaIcon} alt="Instagram Icon" />
@@ -46,8 +46,7 @@ function Hero() {
             </a>
         </span>
         <p className={styles.description}>
-          Driven by a passion for building modern React web applications for commercial businesses, 
-          and skilled in creating polished, high-quality video edits.</p>  
+          “Creating clean, engaging, and conversion-focused content for social media”</p>  
             <a href={CV} download>
             <button className="hover">Download Resume</button>
         </a>
