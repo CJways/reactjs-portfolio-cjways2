@@ -1,43 +1,84 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-
-    img{
-        max-width: 250px;
-        align-self: center;
-        background-color: var(--project-card-bg);
-        border-radius: 20px;
-    } 
-
-    a{
-        width: fit-content;
-        text-decoration: none;
-        color: #222;
-        transition: transform 200ms ease-in-out;
-    }
-
-    a:hover{
-        transform: scale(1.05);
-    }
+* .sectionTitle {
+  margin-top: 80px;     /* space BEFORE the title */
+  margin-bottom: 30px; /* space AFTER the title */
+  line-height: 1.2;
 }
-    .projectsContainer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-.container video{
-        max-width: 250px;
-        align-self: center;
-        background-color: var(--project-card-bg);
-        border-radius: 20px;
+#projects .sectionTitle:first-of-type {
+  margin-top: 30px;
 }
-@media(width >= 800px){
-    .projectsContainer{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        padding: 0 30px;
-    }
+
+
+:root {
+  --project-card-bg: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* ================= IMAGES ================= */
+.container img {
+  max-width: 250px;
+  align-self: center;
+  background-color: var(--project-card-bg);
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.container img:hover {
+  transform: scale(1.05);
+}
+
+/* ================= TEXT ================= */
+.container h3,
+.container p {
+  max-width: 250px;
+  margin: 6px auto;
+  text-align: center;
+  justify-content: center;
+}
+
+/* ================= LINKS ================= */
+.container a {
+  width: fit-content;
+  text-decoration: none;
+  color: #222;
+  transition: transform 0.2s ease-in-out;
+}
+
+.container a:hover {
+  transform: scale(1.05);
+}
+
+/* ================= PROJECTS CONTAINER ================= */
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ================= VIDEOS ================= */
+.container video {
+  max-width: 250px;
+  align-self: center;
+  background-color: var(--project-card-bg);
+  border-radius: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.container video:hover {
+  transform: scale(1.05);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (min-width: 800px) {
+  .projectsContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 30px;
+  }
 }

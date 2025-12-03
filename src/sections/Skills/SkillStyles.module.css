@@ -1,47 +1,60 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    
-    span{
-        display: flex;
-        align-items: center;
-        gap: 5px;
-    }
-
-    img{
-        width: 20px;
-    }
-
+.sectionTitle {
+  margin: 10px 0;
+  padding: 0;
+  line-height: 1.2;
 }
 
-.skillList{
-    display: flex;
-    justify-content: space-evenly;
-    align-self: center;
-    flex-wrap: wrap;
-    row-gap: 40px;
-    max-width: 26ch;
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px 0;
 }
 
-hr{
-    width: 100px;
-    height: 1px;
-    border: none;
-    background-color: var(--text-color) ;
-    margin: 30px auto;
+/* Skill row layout */
+.skillList {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  max-width: 26ch;
+  margin-bottom: 40px;
 }
 
-@media(width >= 800px){
-    .skillList{
-        max-width: fit-content;
-        gap: 30px;
+/* HR styling */
+hr {
+  width: 100px;
+  height: 1px;
+  border: none;
+  background-color: var(--text-color);
+  margin: 10px auto 25px;
+}
 
-        p{
-            font-size: 20px;
-        }
-    }
-        hr{
-            width: 300px;
-        }    
+/* Fix nested span */
+.container span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Fix nested image */
+.container img {
+  width: 20px;
+}
+
+/* Desktop adjustments */
+@media (min-width: 800px) {
+  .skillList {
+    max-width: fit-content;
+    gap: 30px;
+  }
+
+  .skillList p {
+    font-size: 20px;
+  }
+
+  hr {
+    width: 300px;
+  }
 }
