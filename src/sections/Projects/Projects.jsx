@@ -7,6 +7,9 @@ import kitchenwareBanner from '../../assets/kitchenware-banner.png';
 import earpods from '../../assets/earpods.png';
 import multimediaprojects from '../../assets/multimediaprojects.png';
 
+import scicalculator from '../../assets/scicalculator.png'
+import tictactoe from '../../assets/tictactoe.png'
+
 import video1 from '../../assets/perfumeShowcase.mp4';
 import video2 from '../../assets/shirtPromo.mp4';
 import video3 from '../../assets/story.mp4';
@@ -107,6 +110,24 @@ function Projects() {
           p="Graphics and digital creative projects"
         />
       </div>
+
+      <h1 className="sectionTitle">Other Skills </h1>
+      <div className={styles.projectsContainer}>
+        <ProjectCard
+          src={scicalculator}
+          link="https://drive.google.com/file/d/1qkN5RBVpyIX2IMzd6kvVDnDhQM4jOeFg/view?usp=sharing"
+          type="image"
+          h3="Front-End Web Development"
+          p="Scientific Calcultor"
+        />
+        <ProjectCard
+          src={tictactoe}
+          link="https://tic-tac-toe-game-by-cjways.netlify.app/"
+          type="image"
+          h3="Front-End Web Development"
+          p="Tic-Tac-Toe Game"
+        />
+      </div>      
     </section>
   );
 }
